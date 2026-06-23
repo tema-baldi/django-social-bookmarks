@@ -1,0 +1,61 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+ENV/
+
+# База данных SQLite
+db.sqlite3
+*.sqlite3
+
+# Загруженные медиафайлы (пользовательские файлы)
+media/
+staticfiles/
+static_root/
+
+# Сертификаты (для локального HTTPS)
+cert.crt
+cert.key
+*.pem
+*.crt
+*.key
+
+# Файлы Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Файлы окружения (секреты)
+.env
+.env.local
+.env.production
+
+# Настройки IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Файлы тестов и покрытия
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Docker (если используете)
+docker-compose.override.yml
+.dockerignore
+
+# Разное
+*.pid
+*.lock
+*.tmp
+.DS_Store (macOS)
+Thumbs.db (Windows)
