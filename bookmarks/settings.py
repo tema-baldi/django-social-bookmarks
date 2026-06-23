@@ -132,8 +132,8 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.google.GoogleOAuth2',
 ]
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '581977102407-upjqce9ecpg4vaov0fpfrf7dgnbqi7le.apps.googleusercontent.com'  # ИД клиента Google
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'  # Секрет клиента Google
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'key'  # ИД клиента Google
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'secret'  # Секрет клиента Google
 SOCIAL_AUTH_PIPELINE = [
     'social_core.pipeline.social_auth.social_details',
     'social_core.pipeline.social_auth.social_uid',
