@@ -89,7 +89,7 @@ def image_list(request):
 
 
 @login_required
-def image_ranking(requset):
+def image_ranking(request):
     image_ranking = r.zrange('image_ranking', 0, -1, desc=True)[:10]
     image_ranking_ids = [int(pk) for pk in image_ranking]
     most_viewed = list(Image.objects.filter(id__in=image_ranking_ids))
@@ -99,4 +99,4 @@ def image_ranking(requset):
         'most_viewed': most_viewed
     }
     template_name = 'images/image/ranking.html'
-    return render(requset, template_name, context)
+    return render(request, template_name, context)
