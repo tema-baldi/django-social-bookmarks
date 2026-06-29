@@ -106,6 +106,7 @@ def edit(request):
                                        data=request.POST,
                                        files=request.FILES
                                        )
+        print(profile_form.errors)
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
