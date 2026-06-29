@@ -59,4 +59,3 @@ docker-compose.override.yml
 *.tmp
 .DS_Store (macOS)
 Thumbs.db (Windows)
-/images/
